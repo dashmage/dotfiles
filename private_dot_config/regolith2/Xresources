@@ -1,0 +1,23 @@
+
+gnome.terminal.font: Hack Nerd Font 15
+gnome.terminal.use-transparent-background: true
+gnome.terminal.background-transparency-percent: 10
+
+i3-wm.gaps.focus_follows_mouse: yes
+
+## Set Gnome theme
+gtk.theme_name: Ayu-Mirage-Dark
+
+## Copying fonts from Dracula Look
+gtk.font_name: RobotoMono Nerd Font 12 
+gtk.document_font_name: Sans 12
+gtk.monospace_font_name: RobotoMono Nerd Font 12
+
+## Gap configuration
+i3-wm.gaps.inner.size: 12
+
+## Change default super binding from win key to alt
+i3-wm.mod: Mod1
+i3-wm.alt: Mod4
+!regolith.look.path: /usr/share/regolith-look/dracula
+regolith.look.path: /usr/share/regolith-look/blackhole

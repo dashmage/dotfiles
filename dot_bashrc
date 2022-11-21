@@ -132,3 +132,5 @@ alias cz=chezmoi
 
 # For starship custom prompt
 eval "$(starship init bash)"
+
+export EDITOR='nvim'
