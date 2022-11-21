@@ -5,3 +5,5 @@ local autocmd = vim.api.nvim_create_autocmd
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- }
+
+vim.cmd [[ autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%" ]]
