@@ -116,14 +116,30 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# -- custom --
+# ---------------------------
+# ---- My custom config ----
+# ---------------------------
+
+# For smart caps
 xcape -e 'Control_L=Escape'
 
+# Create a dir and cd into it
 function ccd { mkdir -p "$1" && cd "$1"; }
+
 alias nv=nvim
 alias ..='cd ..'
+
+# Chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
-#PATH=$PATH:~/.local/bin
+
+# chezmoi-cd to change dir normally and not spawn a new shell
+# https://www.chezmoi.io/user-guide/frequently-asked-questions/design/#why-does-chezmoi-cd-spawn-a-shell-instead-of-just-changing-directory
+chezmoi-cd() {
+    cd $(chezmoi source-path)
+}
+
+alias czd=chezmoi-cd
+alias cze='chezmoi edit --apply'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
