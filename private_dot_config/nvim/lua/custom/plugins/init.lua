@@ -12,7 +12,7 @@ return {
     end,
   },
 
-  -- overrde plugin configs
+  -- override plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = overrides.treesitter,
   },
