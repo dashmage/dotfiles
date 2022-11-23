@@ -128,6 +128,7 @@ function ccd { mkdir -p "$1" && cd "$1"; }
 
 alias nv=nvim
 alias ..='cd ..'
+alias k=kubectl
 
 # Chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
