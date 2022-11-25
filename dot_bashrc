@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
 # ---------------------------
 # ---- My custom config ----
 # ---------------------------
@@ -161,4 +164,9 @@ alias co='git checkout'
 # For starship custom prompt
 eval "$(starship init bash)"
 
+# Nvim default
 export EDITOR='nvim'
+
+# kubectl autocomplete
+source <(kubectl completion bash)
+complete -o default -F __start_kubectl k
