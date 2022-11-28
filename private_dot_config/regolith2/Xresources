@@ -19,5 +19,8 @@ i3-wm.gaps.inner.size: 12
 ## Change default super binding from win key to alt
 i3-wm.mod: Mod1
 i3-wm.alt: Mod4
-!regolith.look.path: /usr/share/regolith-look/dracula
+
 regolith.look.path: /usr/share/regolith-look/blackhole
+
+## Workaround for assigning workspace to a monitor
+i3-wm.workspace.09.name: chat
