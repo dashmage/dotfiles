@@ -1,8 +1,13 @@
 # All my aliases in one place
 
 alias nv=nvim
-alias ..='cd ..'
 alias k=kubectl
+
+# Moving up dirs easier
+alias ..='cd ..'
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 # For Chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
@@ -10,12 +15,19 @@ alias czd=chezmoi-cd
 alias cze='chezmoi edit --apply'
 
 # Git aliases
-alias s='git status -sb'
+alias gs='git status -sb' # short status + show branch
+alias gd='git diff'
 alias gpl='git pull'
 alias gps='git push'
 alias gpf='git push -f' # force push
-alias c='git commit -ev'
+alias gc='git commit -ev'
 alias ga='git add --all'
-alias t='git log --graph --oneline --decorate' # pretty git tree log
+alias gt='git log --graph --oneline --decorate' # pretty git tree log
 alias gcan='git add . && git commit --amend --no-edit'
-alias co='git checkout'
+alias gco='git checkout'
+
+# Find out what is taking so much space on your drives
+alias diskspace="du -S | sort -n -r | less"
+
+# Hacker screen
+alias hacker="cat /dev/urandom | hexdump -C | grep 'ca fe'"

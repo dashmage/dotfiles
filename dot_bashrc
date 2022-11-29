@@ -149,3 +149,9 @@ export EDITOR='nvim'
 # kubectl autocomplete
 source <(kubectl completion bash)
 complete -o default -F __start_kubectl k
+
+# Move 'up' so many directories instead of using several cd ../../, etc.
+up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
+
+# 'cd' into a directory and then list contents
+cdls() { cd "$1"; ls;}
