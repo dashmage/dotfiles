@@ -1,0 +1,21 @@
+# All my aliases in one place
+
+alias nv=nvim
+alias ..='cd ..'
+alias k=kubectl
+
+# For Chezmoi (https://www.chezmoi.io/quick-start/)
+alias cz=chezmoi
+alias czd=chezmoi-cd
+alias cze='chezmoi edit --apply'
+
+# Git aliases
+alias s='git status -sb'
+alias gpl='git pull'
+alias gps='git push'
+alias gpf='git push -f' # force push
+alias c='git commit -ev'
+alias ga='git add --all'
+alias t='git log --graph --oneline --decorate' # pretty git tree log
+alias gcan='git add . && git commit --amend --no-edit'
+alias co='git checkout'
