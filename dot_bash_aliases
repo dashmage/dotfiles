@@ -29,6 +29,9 @@ alias gt='git log --graph --oneline --decorate' # pretty git tree log
 alias gcan='git add . && git commit --amend --no-edit'
 alias gco='git checkout'
 
+# For easy juju status monitoring
+alias jsw='watch -n1 --color juju status --color'
+
 # Find out what is taking so much space on your drives
 alias diskspace="du -S | sort -n -r | less"
 
