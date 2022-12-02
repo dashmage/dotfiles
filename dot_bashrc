@@ -155,3 +155,8 @@ up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
 
 # 'cd' into a directory and then list contents
 cdls() { cd "$1"; ls;}
+
+# Autocomplete related stuff
+bind 'TAB:menu-complete'
+bind '"\e[Z":menu-complete-backward'
+bind 'set show-all-if-ambiguous on'
