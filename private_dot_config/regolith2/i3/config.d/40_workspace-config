@@ -130,5 +130,7 @@ set $laptop eDP-1
 # set $ext DP-1
 
 workspace "$ws9" output $laptop
+# workspace "$ws1" output $ext
 
 assign [class="Mattermost"] $ws9
+# assign [class="firefox"] $ws1
