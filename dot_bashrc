@@ -160,3 +160,8 @@ cdls() { cd "$1"; ls;}
 bind 'TAB:menu-complete'
 bind '"\e[Z":menu-complete-backward'
 bind 'set show-all-if-ambiguous on'
+
+# Easy assembling and running uxntal programs
+u() { uxnasm "$1.tal" "$1.rom" && uxnemu "$1.rom"; }
+
+export ADVENT_SESSION_COOKIE='53616c7465645f5faff42a1be71d4acb654a427a7bc1704626f4c7a7697eece5f328d9e8e48284279edc89482904fb512cfd2c8828e793ee4498489395d59c6d'
