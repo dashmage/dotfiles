@@ -1,7 +1,7 @@
 [user]
 	name = Ashley James
-	email = ashleyjames2800@gmail.com
+	email = ashley.james@canonical.com
 [credential]
 	helper = store
-[url "git+ssh://dashmage@git.launchpad.net/"]
+[url "git://dashmage@git.launchpad.net/"]
   insteadof = lp:

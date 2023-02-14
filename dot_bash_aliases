@@ -28,7 +28,7 @@ alias gpf='git push -f' # force push
 alias gc='git commit -ev'
 alias ga='git add --all'
 alias gt='git log --graph --oneline --decorate' # pretty git tree log
-alias gcan='git add . && git commit --amend --no-edit'
+alias gcan='git commit --amend --no-edit'
 alias gco='git checkout'
 
 # For easy juju status monitoring
