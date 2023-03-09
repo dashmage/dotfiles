@@ -2,7 +2,7 @@
 
 alias nv=nvim
 alias k=kubectl
-alias jj=juju
+alias j=juju
 alias os=openstack
 
 # Moving up dirs easier
