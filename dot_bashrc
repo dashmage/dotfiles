@@ -14,6 +14,7 @@ HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -163,5 +164,3 @@ bind 'set show-all-if-ambiguous on'
 
 # Easy assembling and running uxntal programs
 u() { uxnasm "$1.tal" "$1.rom" && uxnemu "$1.rom"; }
-
-export ADVENT_SESSION_COOKIE='53616c7465645f5faff42a1be71d4acb654a427a7bc1704626f4c7a7697eece5f328d9e8e48284279edc89482904fb512cfd2c8828e793ee4498489395d59c6d'
