@@ -14,12 +14,11 @@ gtk.document_font_name: Sans 12
 gtk.monospace_font_name: RobotoMono Nerd Font 12
 
 ## Gap configuration
-i3-wm.gaps.inner.size: 12
+i3-wm.gaps.inner.size: 8 
 
 ## Change default super binding from win key to alt
 i3-wm.mod: Mod1
 i3-wm.alt: Mod4
-
 
 ## Workaround for assigning workspace to a monitor
 i3-wm.workspace.09.name: 9:<span> </span><span font_desc='SauceCodePro Nerd Font Mono 9'>9 </span><span foreground='#e6e1cf'></span><span> </span>
