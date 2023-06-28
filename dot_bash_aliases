@@ -3,6 +3,7 @@
 alias nv=nvim
 alias k=kubectl
 alias j=juju
+alias js='juju status'
 alias jh=jhack
 alias os=openstack
 
