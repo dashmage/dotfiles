@@ -14,7 +14,7 @@ alias cz=chezmoi
 # chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
 alias czd=chezmoi-cd
-alias cze='chezmoi edit --apply'
+alias cze='EDITOR=hx chezmoi edit --apply'
 
 alias j='juju'
 alias js='juju status'
