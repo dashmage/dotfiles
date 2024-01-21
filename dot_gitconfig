@@ -1,0 +1,14 @@
+[init]
+	defaultBranch = main
+
+[user]
+	name = Ashley James
+	email = ashley.james@canonical.com
+[credential]
+	helper = store
+[url "git://dashmage@git.launchpad.net/"]
+  insteadof = lp:
+[core]
+	editor = hx
+[cola]
+	spellcheck = false
