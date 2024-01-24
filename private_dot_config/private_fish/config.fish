@@ -13,7 +13,7 @@ alias cz=chezmoi
 
 # chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
-alias czd=chezmoi-cd
+alias czd="chezmoi cd"
 alias cze='EDITOR=hx chezmoi edit --apply'
 
 alias j='juju'

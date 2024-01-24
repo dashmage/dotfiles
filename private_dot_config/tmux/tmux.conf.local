@@ -379,6 +379,9 @@ set -g mouse on
 # disable repeat
 set -g repeat-time 0
 
+# toggle status line
+bind '\' set -g status
+if-shell "[[ $(tmux lsw | wc -l) -le 1 ]]" 'set -g status'
 
 # -- tpm -----------------------------------------------------------------------
 
