@@ -1,6 +1,5 @@
 [init]
 	defaultBranch = main
-
 [user]
 	name = Ashley James
 	email = ashley.james@canonical.com
@@ -11,7 +10,37 @@
   insteadof = lp:
 [core]
 	editor = hx
+	pager = delta
 [cola]
 	spellcheck = false
 [commit]
 	gpgsign = true
+[branch]
+	sort = -committerdate
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[include]
+	path = /home/dashmage/projects/delta/themes.gitconfig
+
+[delta]
+    features = chameleon
+    side-by-side = true
+
+[alias]
+	# add files via fzf
+    fza = "!git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 git add"
+	# delete local branches that don't exist on remote
+	gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+
