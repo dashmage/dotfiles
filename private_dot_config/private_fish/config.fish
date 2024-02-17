@@ -43,6 +43,7 @@ alias gc='git commit -ev'
 alias ga='git add --all'
 # alias gt='git log --graph --oneline --decorate'
 alias gl='git lg'  # ensure git lg alias is present in .gitconfig
+alias glp='git log -p'
 alias gcan='git commit --amend --no-edit'
 alias gco='git checkout'
 alias gr='git remote -v'
