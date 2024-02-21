@@ -21,6 +21,7 @@ alias j='juju'
 alias js='juju status'
 alias jsw='juju status --watch 5s'
 alias os='openstack'
+alias osl='openstack server list'
 
 alias ls='lsd'
 alias l='ls -l'
