@@ -50,4 +50,4 @@ alias gcan='git commit --amend --no-edit'
 alias gco='git checkout'
 alias gr='git remote -v'
 
-set EDITOR "hx"
+export EDITOR "hx"
