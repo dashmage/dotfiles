@@ -10,7 +10,7 @@ alias nv=nvim
 alias bat=batcat
 alias fd=fdfind
 alias t='tmux new -A -s dashmage'
-alias cz=chezmoi
+alias ze=zellij
 
 # chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
