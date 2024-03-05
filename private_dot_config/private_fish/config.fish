@@ -50,5 +50,5 @@ alias gcan='git commit --amend --no-edit'
 alias gco='git checkout'
 alias gr='git remote -v'
 
-set -e XDG_DATA_HOME
-export EDITOR "hx"
+# set -e XDG_DATA_HOME
+export EDITOR="hx"
