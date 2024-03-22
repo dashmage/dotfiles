@@ -50,5 +50,7 @@ alias gcan='git commit --amend --no-edit'
 alias gco='git checkout'
 alias gr='git remote -v'
 
+alias gpt4all="'/home/dashmage/personal/code/gpt4all/venv/bin/python' '/home/dashmage/personal/code/gpt4all/app.py' repl  --model /home/dashmage/.local/share/nomic.ai/GPT4All/Nous-Hermes-2-Mistral-7B-DPO.Q4_0.gguf"
+
 # set -e XDG_DATA_HOME
 export EDITOR="hx"
