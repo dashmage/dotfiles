@@ -1,3 +1,14 @@
 [package]
 disabled = true
 
+[cmd_duration]
+disabled = true
+
+[python]
+format = 'via [${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)'
+
+[git_branch]
+style = 'bold fg:#5DE4c7'
+
+[git_status]
+style = 'bold fg:#ADD7FF'
