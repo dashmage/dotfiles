@@ -1,6 +1,7 @@
-theme = "ayu_evolve"
-# theme = "sonokai"
-# theme = "tokyonight"
+theme = "poimandres"
+
+[editor]
+bufferline = "multiple"
 
 [editor.smart-tab]
 enable = false
@@ -9,6 +10,9 @@ enable = false
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.lsp]
+auto-signature-help = false
 
 # refer: https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
 
