@@ -15,7 +15,7 @@ select = "underline"
 auto-signature-help = false
 
 [editor.file-picker]
-hidden = false
+# hidden = false
 
 # refer: https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
 
@@ -49,6 +49,8 @@ esc = ["collapse_selection", "keep_primary_selection"]
 
 [keys.normal.space]
 "space" = "goto_last_accessed_file"
+F = "file_picker_in_current_buffer_directory"
+"q" = ":q"
 
 [keys.insert]
 esc = ["collapse_selection", "normal_mode"]
