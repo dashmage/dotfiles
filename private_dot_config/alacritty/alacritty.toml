@@ -1,7 +1,7 @@
 live_config_reload = true
 
 import = [
-    "~/.config/alacritty/themes/themes/hyper.toml"
+    "~/.config/alacritty/my_theme.toml"
 ]
 
 [font]
@@ -26,4 +26,9 @@ style = "Regular"
 [keyboard]
 bindings = [
     { key = "F11", action = "ToggleFullscreen" },
+    # alt+t swaps last 2 args in command
+    { key = "t", mods = "Alt", action = "None" },
 ]
+
+[cursor]
+style = { shape="Beam", blinking="On" }
