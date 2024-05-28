@@ -2,6 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
     source ~/canonical/novarc_serverstack
+    # auto start zellij
     set ZELLIJ_AUTO_ATTACH true
     set ZELLIJ_AUTO_EXIT true
     eval (zellij setup --generate-auto-start fish | string collect)
@@ -55,5 +56,7 @@ alias gr='git remote -v'
 
 alias gpt4all="'/home/dashmage/personal/code/gpt4all/venv/bin/python' '/home/dashmage/personal/code/gpt4all/app.py' repl"
 
-# set -e XDG_DATA_HOME
 export EDITOR="hx"
+
+# remap fzf directory search to ctrl+f
+fzf_configure_bindings --directory=\cf
