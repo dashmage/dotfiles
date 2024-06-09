@@ -2,7 +2,7 @@
 	defaultBranch = main
 [user]
 	name = Ashley James
-	email = ashley.james@canonical.com
+	email = 25390807+dashmage@users.noreply.github.com
 	signingkey = CE46B005C2CF4CDC289CEA2E690D3641BF8ECA47
 [credential]
 	helper = store
@@ -45,8 +45,6 @@
 	default = current
 [help]
 	autocorrect = 10
-[includeIf "gitdir:~/personal/code/"]
-	path = "~/personal/code/.gitconfig"
 [rebase]
 	autosquash = true
 	autostash = true
