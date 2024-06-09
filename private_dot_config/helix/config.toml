@@ -17,6 +17,9 @@ auto-signature-help = false
 [editor.file-picker]
 # hidden = false
 
+[editor.soft-wrap]
+enable = true
+
 # refer: https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
 
 [keys.normal]
@@ -24,7 +27,6 @@ ret = "command_mode"
 C-r = ":config-reload"
 C-s = ":write"
 
-# Some nice Helix stuff
 C-h = "jump_view_left"
 C-l = "jump_view_right"
 C-j = ["goto_next_paragraph", "collapse_selection"]
