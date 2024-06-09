@@ -2,6 +2,7 @@
 [[language]]
 name = "python"
 language-servers = [ "pyright", "ruff" ]
+# auto-format = true
 
 [language-server.pyright.config.python.analysis]
 typeCheckingMode = "basic"
@@ -15,3 +16,7 @@ args = ["--ignore", "E501"]
 [language.formatter]
 command = "black"
 args = ["--line-length", "88", "--quiet", "-"]
+
+[[language]]
+name = "c"
+indent = { tab-width = 2, unit = "  " }
