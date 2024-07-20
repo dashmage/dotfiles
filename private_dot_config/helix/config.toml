@@ -2,9 +2,10 @@ theme = "poimandres"
 
 [editor]
 bufferline = "multiple"
+auto-format = true
 
 [editor.smart-tab]
-enable = false
+#enable = false
 
 [editor.cursor-shape]
 insert = "bar"
@@ -20,12 +21,17 @@ auto-signature-help = false
 [editor.soft-wrap]
 enable = true
 
+[editor.auto-save]
+focus-lost = false
+after-delay.enable = true
+after-delay.timeout = 1000
+
 # refer: https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
 
 [keys.normal]
 ret = "command_mode"
 C-r = ":config-reload"
-C-s = ":write"
+# C-s = ":write"
 
 C-h = "jump_view_left"
 C-l = "jump_view_right"
