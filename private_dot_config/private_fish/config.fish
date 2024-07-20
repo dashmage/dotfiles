@@ -52,10 +52,10 @@ alias gcan='git commit --amend --no-edit'
 alias gco='git checkout'
 alias gr='git remote -v'
 
-alias gpt4all="'/home/dashmage/personal/code/gpt4all/venv/bin/python' '/home/dashmage/personal/code/gpt4all/app.py' repl"
-
 export EDITOR="hx"
 export BAT_THEME="Nord"
 
 # remap fzf directory search to ctrl+f
 fzf_configure_bindings --directory=\cf
+
+source ~/.config/fish/functions/aichat.fish
