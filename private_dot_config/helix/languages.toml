@@ -1,21 +1,33 @@
-# https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#python---pyright
+# https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#python---pyright--ruff--black
+
 [[language]]
 name = "python"
-language-servers = [ "pyright", "ruff" ]
+# pyright is only used for completions, goto(s)
+# rest is done with ruff
+language-servers = [ "ruff", "pyright"]
 # auto-format = true
 
-[language-server.pyright.config.python.analysis]
-typeCheckingMode = "basic"
-
 [language-server.ruff]
-command = "ruff-lsp"
+command = "ruff"
+args = ["server"]
+environment = { "RUFF_TRACE" = "messages" }
 
 [language-server.ruff.config.settings]
 args = ["--ignore", "E501"]
+logLevel = "debug"
 
 [language.formatter]
-command = "black"
-args = ["--line-length", "88", "--quiet", "-"]
+command = "ruff"
+args = ["format", "--line-length", "88", "--quiet", "-"]
+
+# pyright settings: https://microsoft.github.io/pyright/#/settings
+
+[language-server.pyright.config.python.analysis]
+ignore = ["*"]
+typeCheckingMode = "basic"
+
+[language-server.pyright.config.pyright]
+disableOrganizeImports = true
 
 [[language]]
 name = "c"
