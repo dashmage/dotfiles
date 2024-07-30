@@ -1,9 +1,11 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
-    set ZELLIJ_AUTO_ATTACH true
-    set ZELLIJ_AUTO_EXIT true
-    eval (zellij setup --generate-auto-start fish | string collect)
+    if test "$TERM" = alacritty
+        set ZELLIJ_AUTO_ATTACH true
+        set ZELLIJ_AUTO_EXIT false
+        eval (zellij setup --generate-auto-start fish | string collect)
+    end
 end
 
 fish_add_path ~/.local/bin/
@@ -18,12 +20,6 @@ alias ze=zellij
 alias cz=chezmoi
 alias czd="chezmoi cd"
 alias cze='EDITOR=hx chezmoi edit --apply'
-
-alias j='juju'
-alias js='juju status'
-alias jsw='juju status --watch 5s'
-alias os='openstack'
-alias osl='openstack server list'
 
 alias ls='lsd'
 alias l='ls -l'
