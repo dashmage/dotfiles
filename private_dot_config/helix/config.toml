@@ -1,4 +1,5 @@
-theme = "poimandres"
+theme = "ayu_evolve"
+# theme = "poimandres"
 
 [editor]
 bufferline = "multiple"
@@ -24,7 +25,7 @@ enable = true
 [editor.auto-save]
 focus-lost = false
 after-delay.enable = true
-after-delay.timeout = 1000
+after-delay.timeout = 2000
 
 # refer: https://github.com/LGUG2Z/helix-vim/blob/master/config.toml
 
