@@ -15,6 +15,7 @@ alias bat=batcat
 alias fd=fdfind
 alias t='tmux new -A -s dashmage'
 alias ze=zellij
+alias ai=aichat
 
 # chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
@@ -54,4 +55,5 @@ export BAT_THEME="Nord"
 # remap fzf directory search to ctrl+f
 fzf_configure_bindings --directory=\cf
 
+# aichat
 source ~/.config/fish/functions/aichat.fish
