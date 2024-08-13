@@ -12,6 +12,7 @@ fish_add_path ~/.local/bin/
 
 alias nv=nvim
 alias bat=batcat
+alias cat=batcat
 alias fd=fdfind
 alias t='tmux new -A -s dashmage'
 alias ze=zellij
