@@ -1,7 +1,6 @@
 # moonlight_ii_vscode with background and foreground from poimandres
 
 [colors.primary]
-# background = "0x1b1e28"
 background = "0x15171f"
 foreground = "0xa6accd"
 
