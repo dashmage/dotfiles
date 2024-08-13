@@ -1,11 +1,18 @@
 live_config_reload = true
 
+# other nice themes: gotham
 import = [
-    "~/.config/alacritty/my_theme.toml"
+    # "~/.config/alacritty/my_theme.toml"
+    # "~/.config/alacritty/themes/themes/tokyo-night.toml"
+    "~/.config/alacritty/themes/themes/ayu_dark.toml"
 ]
 
+[window]
+startup_mode = "Maximized"
+decorations = "None"
+
 [font]
-size = 12.0
+size = 13.0
 
 [font.bold]
 family = "JetBrainsMono Nerd Font Mono"
@@ -32,3 +39,6 @@ bindings = [
 
 [cursor]
 style = { shape="Beam", blinking="On" }
+
+[selection]
+save_to_clipboard = true
