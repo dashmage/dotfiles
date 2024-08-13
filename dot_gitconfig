@@ -3,7 +3,7 @@
 [user]
 	name = Ashley James
 	email = 25390807+dashmage@users.noreply.github.com
-	signingkey = CE46B005C2CF4CDC289CEA2E690D3641BF8ECA47
+	signingkey = 5CF5E1F7054B70972054D4D2B84247CBA1330E61
 [credential]
 	helper = store
 [url "git://dashmage@git.launchpad.net/"]
