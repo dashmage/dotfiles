@@ -21,7 +21,7 @@ alias ai=aichat
 # chezmoi (https://www.chezmoi.io/quick-start/)
 alias cz=chezmoi
 alias czd="chezmoi cd"
-alias cze='EDITOR=hx chezmoi edit --apply'
+alias cze='chezmoi edit --apply'
 
 alias ls='lsd'
 alias l='ls -l'
