@@ -53,8 +53,12 @@ alias gr='git remote -v'
 export EDITOR="hx"
 export BAT_THEME="Nord"
 
-# remap fzf directory search to ctrl+f
-fzf_configure_bindings --directory=\cf
+# fzf
+fzf --fish | FZF_ALT_C_COMMAND= source
+source ~/.config/fish/functions/fzf.fish
 
 # aichat
 source ~/.config/fish/functions/aichat.fish
+
+# zoxide
+zoxide init fish | source
