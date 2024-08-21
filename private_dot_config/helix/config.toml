@@ -40,8 +40,8 @@ C-j = ["goto_next_paragraph", "collapse_selection"]
 C-k = ["goto_prev_paragraph", "collapse_selection"]
 
 0 = "goto_line_start"
-"L" = "goto_line_end"
-"H" = "goto_first_nonwhitespace"
+L = "goto_line_end"
+H = "goto_first_nonwhitespace"
 G = "goto_file_end"
 V = ["select_mode", "extend_to_line_bounds"]
 C = ["extend_to_line_end", "yank_main_selection_to_clipboard", "delete_selection", "insert_mode"]
@@ -55,6 +55,8 @@ esc = ["collapse_selection", "keep_primary_selection"]
 # Search for word under cursor
 "*" = ["move_char_right", "move_prev_word_start", "move_next_word_end", "search_selection", "search_next"]
 "#" = ["move_char_right", "move_prev_word_start", "move_next_word_end", "search_selection", "search_prev"]
+
+"," = "goto_word"
 
 [keys.normal.space]
 "space" = "goto_last_accessed_file"
