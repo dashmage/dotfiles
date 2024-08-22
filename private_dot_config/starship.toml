@@ -1,14 +1,42 @@
-[package]
-disabled = true
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$python\
+$battery\
+$line_break\
+$character"""
 
-[cmd_duration]
-disabled = true
+[directory]
+style = "blue"
 
-[python]
-format = 'via [${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)'
+[character]
+success_symbol = "[❯](#ff76ff)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
 
 [git_branch]
-style = 'bold fg:#5DE4c7'
+format = "[$branch]($style)"
+style = "bright-black"
 
 [git_status]
-style = 'bold fg:#ADD7FF'
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[python]
+format = "[$virtualenv]($style) "
+style = "bright-black"
