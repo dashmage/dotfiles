@@ -1,0 +1,15 @@
+themes {
+    poimandres {
+        fg "#1b1e28"
+        bg "#a6accd"
+        red "#ff5370"
+        green "#4fd6be"
+        yellow "#ffc777"
+        blue "#3e68d7"
+        magenta "#fc7b7b"
+        orange 255 184 108
+        cyan "#86e1fc"
+        black "#444a73"
+        white "#d0d0d0"
+    }
+}
