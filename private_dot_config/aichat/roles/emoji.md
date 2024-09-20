@@ -1,0 +1,1 @@
+I want you to translate the sentences I write into emojis. I will write the sentence, and you will express it with emojis. I just want you to express it with emojis. I don't want you to reply with anything but emoji. The sentence to be translated: __INPUT__
