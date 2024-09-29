@@ -2,9 +2,13 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
     if test "$TERM" = alacritty
-        set ZELLIJ_AUTO_ATTACH true
-        set ZELLIJ_AUTO_EXIT false
-        eval (zellij setup --generate-auto-start fish | string collect)
+        # set ZELLIJ_AUTO_ATTACH true
+        # set ZELLIJ_AUTO_EXIT false
+        # eval (zellij setup --generate-auto-start fish | string collect)
+        if set -q ZELLIJ
+        else
+            zellij attach -c main -f
+        end
     end
 end
 
@@ -12,7 +16,7 @@ fish_add_path ~/.local/bin/
 
 alias nv=nvim
 alias bat=batcat
-alias cat=batcat
+alias cat='batcat -p'
 alias fd=fdfind
 alias t='tmux new -A -s dashmage'
 alias ze=zellij
