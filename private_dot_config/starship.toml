@@ -5,9 +5,9 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
-$python\
 $battery\
 $line_break\
+$python\
 $character"""
 
 [directory]
