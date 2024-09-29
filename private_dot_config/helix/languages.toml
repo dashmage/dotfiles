@@ -4,8 +4,15 @@
 name = "python"
 # pyright is only used for completions, goto(s)
 # rest is done with ruff
-language-servers = [ "ruff", "pyright"]
+language-servers = [ "pyright", "ruff"]
 # auto-format = true
+
+[language-server.pyright.config.python.analysis]
+# ignore = ["*"]
+typeCheckingMode = "basic"
+
+# [language-server.pyright.config.pyright]
+# disableOrganizeImports = true
 
 [language-server.ruff]
 command = "ruff"
@@ -21,13 +28,6 @@ command = "ruff"
 args = ["format", "--line-length", "88", "--quiet", "-"]
 
 # pyright settings: https://microsoft.github.io/pyright/#/settings
-
-[language-server.pyright.config.python.analysis]
-ignore = ["*"]
-typeCheckingMode = "basic"
-
-[language-server.pyright.config.pyright]
-disableOrganizeImports = true
 
 [[language]]
 name = "c"
